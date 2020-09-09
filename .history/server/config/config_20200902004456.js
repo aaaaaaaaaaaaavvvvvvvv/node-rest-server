@@ -18,19 +18,3 @@ if(process.env.NODE_ENV === 'dev'){
     urlDB= process.env.MONGO_URI;
 }
 process.env.URLDB = urlDB;
-
-// ========================================
-// VENCIMIENTO DEL TOKEN
-// ========================================
-
-process.env.CADUCICAD_TOKEN =60*60*24*30;
-
-// ========================================
-// SEMILLA DE AUTENTICACION
-// ========================================
-process.env.SEED = process.env.SEED  || 'seed-desarrollo';
-
-// ========================================
-// ROLE ADMINISTRADOR
-// ========================================
-process.env.ROLE_ADMIN = 'ADMIN_ROLE';

@@ -15,7 +15,6 @@ app.use(bodyParser.json());
 
 //Configuracion global de rutas
 app.use(require('./routes/index'));
-
 //Conexion a mongodb
 mongoose.connect(process.env.URLDB, {
   useNewUrlParser: true,

@@ -1,4 +1,4 @@
-// ========================================
+se// ========================================
 // PUERTO
 // ========================================
 process.env.PORT = process.env.PORT || 3000;
@@ -28,9 +28,4 @@ process.env.CADUCICAD_TOKEN =60*60*24*30;
 // ========================================
 // SEMILLA DE AUTENTICACION
 // ========================================
-process.env.SEED = process.env.SEED  || 'seed-desarrollo';
-
-// ========================================
-// ROLE ADMINISTRADOR
-// ========================================
-process.env.ROLE_ADMIN = 'ADMIN_ROLE';
+process.env.SEED = 'seed-desarrollo';

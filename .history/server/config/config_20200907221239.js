@@ -33,4 +33,4 @@ process.env.SEED = process.env.SEED  || 'seed-desarrollo';
 // ========================================
 // ROLE ADMINISTRADOR
 // ========================================
-process.env.ROLE_ADMIN = 'ADMIN_ROLE';
+process.env.ROLE_ADMIN = 'ROLE_ADMIN';
