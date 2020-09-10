@@ -3,7 +3,6 @@ require('./config/config');
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
-const path = require('path');
 
 //Llamados a servicio web
 const bodyParser = require('body-parser');
@@ -29,8 +28,8 @@ mongoose.connect(process.env.URLDB, {
 });
  
 //Habilitar la carpeta public para que sea accedido de cualquier lugar
-app.use(express.static(path.resolve(__dirname , '../public')));
-console.log(path.resolve(__dirname , '../public'));
+app.use(express.static( __dirname + '../public' ));
+
 app.listen(process.env.PORT, ()=> {
    console.log('Escuchando puerto',process.env.PORT); 
 });

@@ -38,4 +38,4 @@ process.env.ROLE_ADMIN = 'ADMIN_ROLE';
 // ========================================
 // GOOGLE CLIENT ID
 // ========================================
-process.env.CLIENT_ID = process.env.CLIENT_ID || '401478122188-ptt8g23hbrfia0ecng0f74cjf3ck8e9p.apps.googleusercontent.com';
+process.env.CLIENT_ID = '401478122188-ptt8g23hbrfia0ecng0f74cjf3ck8e9p.apps.googleusercontent.com';

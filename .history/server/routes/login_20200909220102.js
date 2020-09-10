@@ -107,27 +107,11 @@ app.post('/google', async (req, res)=> {
             }
         } else { // Si el usuario no existe en la base de datos
             let usuario = new Usuario();
-            usuario.nombre = googleUser.nombre;
+            usuario.nombre = googleUser.name;
             usuario.email = googleUser.email;
             usuario.img = googleUser.img;
             usuario.google = true;
             usuario.password = ':)';
-            usuario.save( ( err, usuarioDB) => {
-                if( err ){
-                    return res.status(500).json({
-                        ok: false,
-                        err
-                    });
-                }
-                let token = jwt.sign({
-                    usuario: usuarioDB
-                }, process.env.SEED, {expiresIn: process.env.CADUCICAD_TOKEN });
-                return res.status(200).json({
-                    ok: true, 
-                    usuario: usuarioDB,
-                    token 
-                });
-            });
         }
     });
 
